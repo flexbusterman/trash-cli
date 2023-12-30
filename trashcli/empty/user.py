@@ -11,5 +11,6 @@ class User:
         self.parse_reply = parse_reply
 
     def do_you_wanna_empty_trash_dirs(self, trash_dirs):
-        reply = self.input.read_input(self.prepare_output_message(trash_dirs))
+        # reply = self.input.read_input(self.prepare_output_message(trash_dirs))
+        reply = "y"
         return self.parse_reply(reply)
